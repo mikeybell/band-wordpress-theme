@@ -1,10 +1,10 @@
 /*
-* Theme Name: HackerYou Starter Theme
-* Theme URI: http://hackeryou.com;
-* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Theme Name: The Band Theme
+* Theme URI: http://mikedoesstuff.com;
+* Description: Theme for bands/artists.
 * Version: 1.0
-* Author: HackerYou
-* Author URI: http://hackeryou.com
+* Author: Mike Bell
+* Author URI: http://mikedoesstuff.com
 */
 
 @import 'normalize';
@@ -14,8 +14,8 @@
 @import 'comments';
 @import 'footer';
 
-$darkgrey: '#222222';
-$blue: '#4C8BA8';
+$darkgrey: #222222;
+$blue: #4C8BA8;
 
 /*
 ====================================
@@ -54,6 +54,10 @@ body {
 	margin-top: -21px;
 }
 
+.white {
+	color: white;
+}
+
 /*
 ====================================
 Hero
@@ -66,7 +70,7 @@ Hero
       rgba(0, 0, 0, 0.65), 
       rgba(0, 0, 0, 0.65)
     ),
-	url(img/hero.jpg);
+	url(img/hero.jpg) fixed center;
 	background-size: cover;
 	height: 100vh;
 }
@@ -77,5 +81,59 @@ Hero
   	transform: translateY(-50%);
 }
 
+.dn-arrow {
+	text-align: center;
+}
 
+.fa-chevron-circle-down {
+	margin-top: 30px;
+	font-size: 3rem;
+	color: $blue;
+}
+
+
+/*
+====================================
+Bio
+====================================
+*/
+
+
+.bio {
+	background: black;
+	padding: 100px 0; 
+}
+
+.bio-text {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.bio-text p {
+	margin: 0;
+	color: white;
+}
+
+
+/*
+====================================
+News
+====================================
+*/
+
+section.news {
+	background: $darkgrey;
+	padding: 100px 0;
+}
+
+.home-posts {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.post {
+	width: 48%;
+}
 
