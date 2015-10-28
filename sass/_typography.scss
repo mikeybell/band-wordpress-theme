@@ -1,14 +1,64 @@
+$darkgrey: '#222222';
+$blue: '#4C8BA8';
+
+
 a {
 	color: #BA209B;
 	text-decoration: none;
+	font-size: 1.6rem;
 	&:hover {
-		color: #D424B1;
+		color: #4C8BA8;
 	}
 }
+
+/* headers */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Work sans', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 10px 0;
+	color: white;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 7.2rem;
+	font-weight: 700;
+	letter-spacing: 10px;
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 3.6rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+}
+
+h3::after {
+	content: '';
+	display: block;
+	border-bottom: 1px solid #4C8BA8;
+	width: 12%;
+	margin: 10px auto 0;
+}
+
+h4 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
 
 /* paragraphs */
 
 p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
 	line-height: 1.5;
 }
 

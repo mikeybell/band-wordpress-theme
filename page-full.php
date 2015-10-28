@@ -7,7 +7,16 @@
 get_header();  ?>
 
 <div class="main">
-  <div class="container">
+
+	<div class="hero">
+		<div class="name">
+			<h1>The Band</h1>
+			<h3>Toronto, ON</h3>
+		</div> <!-- /.name -->
+	</div> <!-- /.hero -->
+
+	<div class="container">
+	
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

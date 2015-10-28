@@ -13,11 +13,19 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
+$darkgrey: '#222222';
+$blue: '#4C8BA8';
+
 /*
 ====================================
 Default Styling
 ====================================
 */
+
+html {
+	font-size: 62.5%;
+}
 
 img {
 	max-width: 100%;
@@ -25,11 +33,10 @@ img {
 
 body {
 	color: #333;
-	padding-top: 120px;
 }
 
 .container {
-	max-width: 1024px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -43,24 +50,31 @@ body {
 	width: 100%;
 }
 
+.main {
+	margin-top: -21px;
+}
 
 /*
 ====================================
-Header
+Hero
 ====================================
 */
 
-.nav {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-end;
-	background: rgba(0,0,0,0.2);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 30px;
+.hero {
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ),
+	url(img/hero.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+.name {
+	position: relative;
+ 	top: 50%;
+  	transform: translateY(-50%);
 }
 
 
