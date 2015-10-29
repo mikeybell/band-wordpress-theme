@@ -55,7 +55,7 @@ get_header();  ?>
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<div class="post">
 							<h4><?php the_title(); ?></h4>
-							<div class="white"><?php the_content(); ?></div> <!-- /.white -->
+							<div class="white"><?php the_excerpt(); ?></div> <!-- /.white -->
 						</div> <!-- /.post -->
 					<?php endwhile; ?>
 				</div> <!-- /.home-posts -->

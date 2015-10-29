@@ -123,7 +123,7 @@ News
 
 section.news {
 	background: $darkgrey;
-	padding: 100px 0;
+	padding: 100px 50px;
 }
 
 .home-posts {
@@ -134,6 +134,21 @@ section.news {
 }
 
 .post {
-	width: 48%;
+	width: calc(50% - 20px);
+}
+
+.read-more {
+	display: block;
+	width: 120px;
+	background: $blue;
+	padding: 10px 15px;
+	margin-top: 20px;
+	text-align: center;
+	transition: 0.2s;
+}
+
+.read-more:hover {
+	color: white;
+	background: darken($blue, 10%);
 }
 
