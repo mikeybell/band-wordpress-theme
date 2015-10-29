@@ -1,4 +1,6 @@
-<footer>
+<?php $footer_image = get_field('footer_image'); ?>
+
+<footer style="background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),url('<?= $footer_image['url']; ?>') fixed center">
   <div class="container">
 
 	<a href="#">

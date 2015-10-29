@@ -268,7 +268,7 @@ function get_post_parent($post) {
 	}
 }
 
-
+/* Read More */
 function new_excerpt_more( $more ) {
 	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
 }
