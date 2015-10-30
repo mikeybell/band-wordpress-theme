@@ -41,11 +41,11 @@ body {
 	margin: 0 auto;
 }
 
-// .content {
-// 	float: left;
-// 	width: 65%;
-// 	margin-right: 5%;
-// }
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
 
 .full {
 	width: 100%;
@@ -53,6 +53,7 @@ body {
 
 .main {
 	margin-top: -21px;
+	background: $darkgrey;
 }
 
 .white {

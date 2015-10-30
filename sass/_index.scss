@@ -1,5 +1,17 @@
 .main-index {
 	margin-top: -21px;
 	padding: 60px 100px;
-	background: url(img/zwartevilt.png);
+	background: $darkgrey;
+}
+
+.content .post {
+	width: 100%;
+}
+
+.entry-title {
+	text-align: left;
+}
+
+.entry-content {
+	color: white;
 }
