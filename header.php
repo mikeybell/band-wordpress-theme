@@ -19,21 +19,18 @@
 
 <body <?php body_class(); ?>>
 
-<header>
-
-  <div class="container">
-    <div class="nav">
+<header id="top">
+  <div class="nav">
+    <div class="container">
       
-        <div class="nav-right">
-        <?php wp_nav_menu( array(
-          'container' => false,
-          'theme_location' => 'primary'
-        )); ?>
-        </div> <!-- /.nav-right -->
+      <div class="nav-right">
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?>
+      </div> <!-- /.nav-right -->
 
-    </div> <!-- /.nav-->
-    
-  </div> <!-- /.container -->
-
+    </div> <!-- /.container -->
+  </div> <!-- /.nav-->
 </header><!--/.header-->
 

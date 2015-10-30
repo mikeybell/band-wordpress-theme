@@ -4,10 +4,9 @@ ul.menu {
 	padding: 0;
 	li {
 		display: inline;
-		margin-right: 10px;
 		a {
 			color: #333;
-			padding: 10px;
+			padding: 25px 25px;
 			color: white;
 			transition: 0.2s;
 		}
@@ -18,16 +17,24 @@ ul.menu {
 	}
 }
 
+ul li {
+	padding: 0;
+	margin: 0;
+}
 
-.nav {
+.nav .container {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: flex-end;
+}
+
+
+.nav {
 	background: rgba(0,0,0,0.2);
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 30px;
+	padding: 25px;
 }

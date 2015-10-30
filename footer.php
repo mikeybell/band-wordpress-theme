@@ -3,7 +3,7 @@
 <footer style="background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),url('<?= $footer_image['url']; ?>') fixed center">
   <div class="container">
 
-	<a href="#">
+	<a href="#top">
 		<h3>Back to Top</h3>
 	</a>
 
