@@ -147,3 +147,19 @@ img {
 	float: left;
 	clear: both;
 }
+
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 768px) {
+	
+	h3::after {
+		width: 20%;
+	}
+
+}

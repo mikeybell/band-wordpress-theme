@@ -242,5 +242,45 @@ Media Queries
 	section.news {
 		padding: 70px 20px;
 	}
+
+	.post {
+		width: calc(50% - 10px);
+	}
+
+	section.social {
+		padding: 70px 10px 100px;
+	}
+
+	.social-nav {
+		a {
+			margin: 5px;
+		}
+		.fa {
+			font-size: 3.5rem;
+			color: $blue;
+		}
+	}
+
+}
+
+@media all and (max-width: 550px) {
+	
+	.bio-text {
+		width: 90%;
+	}
+
+	.home-posts {
+		flex-direction: column;
+		justify-content: space-between;
+	}	
+
+	.post {
+		width: 100%;
+	}
+
+	.line {
+		margin-top: 30px;
+	}
+
 }
 
