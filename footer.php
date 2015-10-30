@@ -1,4 +1,10 @@
-<?php $footer_image = get_field('footer_image'); ?>
+<?php 
+$slug = get_page_by_path( 'news' ); 
+if (is_home()) { ?>
+       <?php $footer_image = get_field('footer_image', $slug->ID); ?>
+<?php } else { ?>
+       <?php $footer_image = get_field('footer_image'); ?>
+<?php } ?>
 
 <footer style="background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),url('<?= $footer_image['url']; ?>') fixed center">
   <div class="container">

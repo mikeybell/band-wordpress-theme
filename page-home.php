@@ -69,13 +69,13 @@ get_header();  ?>
 				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
 
-			<a href=""><h3>See all news</h3></a>
+			<a href="<?php bloginfo('url'); ?>/news"><h3>See all news</h3></a>
 			
 		</div> <!-- /.container -->
 	</section> <!-- /.news -->
 
 	<!-- Shows -->
-	<a href="">
+	<a href="<?php bloginfo('url'); ?>/shows">
 		<?php $image = get_field('show_image'); ?>
 		<section class="shows" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('<?= $image['url']; ?>') fixed center">
 			<div class="container">

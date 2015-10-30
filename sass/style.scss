@@ -13,6 +13,8 @@
 @import 'sidebar';
 @import 'index';
 @import 'single';
+@import 'shows';
+@import 'listen';
 @import 'comments';
 @import 'footer';
 
@@ -226,6 +228,19 @@ section.social {
 	.fa {
 		font-size: 3.5rem;
 		color: $blue;
+	}
+}
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 768px) {
+	section.news {
+		padding: 70px 20px;
 	}
 }
 
