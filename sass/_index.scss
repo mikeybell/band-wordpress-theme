@@ -1,7 +1,10 @@
 .main-index {
 	margin-top: -21px;
-	padding: 60px 100px;
+	padding: 100px 100px;
 	background: $darkgrey;
+	h1 {
+		margin-bottom: 100px;
+	}
 }
 
 .content .post {
@@ -10,8 +13,15 @@
 
 .entry-title {
 	text-align: left;
+	a {
+		font-size: 3rem;
+	}
 }
 
 .entry-content {
 	color: white;
+}
+
+article .read-more {
+	margin-bottom: 50px;
 }

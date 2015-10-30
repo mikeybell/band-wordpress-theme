@@ -2,7 +2,7 @@
 	width: 30%;
 	float: left;
 	background: url(img/zwartevilt.png);
-	padding: 130px 30px;
+	padding: 50px 30px;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -10,4 +10,33 @@
 			list-style: none;
 		}
 	}
+}
+
+form #searchform {
+	width: 100%;
+}
+
+input[type=search] {
+	padding: 10px;
+}
+
+.searchsubmit {
+	background: $blue;
+	border: none;
+	padding: 13px 20px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.widget-title {
+	text-align: left;
+	margin-top: 40px;
+}
+
+.widget-title:after {
+	width: 100%;
+}
+
+.xoxo li {
+	margin-bottom: 10px;
 }

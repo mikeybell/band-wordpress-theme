@@ -4,6 +4,8 @@
 <div class="main-index clearfix">
   <div class="container">
 
+  		<h1>Latest News</h1>
+
     <div class="content">
         <?php get_template_part( 'loop', 'index' ); ?>
     </div> <!--/.content -->
