@@ -20,7 +20,7 @@ if (is_home()) { ?>
 	)); ?>
 	</div> <!-- /.footer-nav -->
 
-    <p>Designed and developed by <a target="_blank" href="http://mikedoesstuff.com">Mike Bell.</a> &copy; <?php echo date('Y'); ?></p>
+    <p>Designed and developed by <a target="_blank" href="http://mikedoesstuff.com">Mike Bell.</a> &copy; <?php echo date('Y'); ?>. Images from Unsplash.com</p>
   </div>
 </footer>
 

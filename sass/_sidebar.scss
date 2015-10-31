@@ -19,13 +19,14 @@ form #searchform {
 input[type=search] {
 	padding: 10px;
 	width: 50%;
+	text-align: center;
 	margin-right: 5px;
 }
 
 .searchsubmit {
 	background: $blue;
 	border: none;
-	padding: 13px 20px;
+	padding: 13px 0;
 	margin-bottom: 20px;
 	width: 30%;
 	text-align: center;

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="main">
+<div class="main-search clearfix">
 	<div class="container">
 
 		<div class="content">
