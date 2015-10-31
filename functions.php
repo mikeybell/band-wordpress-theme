@@ -71,6 +71,22 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+  wp_enqueue_script(
+    'jquery.smooth-scroll', //handle
+    get_template_directory_uri() . '/js/jquery.smooth-scroll.js', //source
+    array( 'jquery', 'plugins' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'wow', //handle
+    get_template_directory_uri() . '/js/wow.min.js', //source
+    array( 'jquery', 'plugins' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
@@ -273,3 +289,4 @@ function new_excerpt_more( $more ) {
 	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+

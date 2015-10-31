@@ -7,10 +7,10 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <h1 class="entry-title wow fadeInDown"><?php the_title(); ?></h1>
 
 
-          <div class="entry-content">
+          <div class="entry-content wow fadeInLeft">
             <?php the_post_thumbnail('large'); ?>
             <?php the_content(); ?>
             <?php wp_link_pages(array(

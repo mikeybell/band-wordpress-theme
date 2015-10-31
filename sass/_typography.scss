@@ -163,3 +163,22 @@ Media Queries
 	}
 
 }
+
+@media all and (max-width: 468px) {
+	
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+}
+
+@media all and (max-width: 320px) {
+	
+	h3::after {
+		width: 50%;
+	}
+	
+}

@@ -18,14 +18,17 @@ form #searchform {
 
 input[type=search] {
 	padding: 10px;
+	width: 50%;
+	margin-right: 5px;
 }
 
 .searchsubmit {
 	background: $blue;
 	border: none;
 	padding: 13px 20px;
-	margin-left: 5px;
 	margin-bottom: 20px;
+	width: 30%;
+	text-align: center;
 }
 
 .widget-title {
@@ -39,4 +42,23 @@ input[type=search] {
 
 .xoxo li {
 	margin-bottom: 10px;
+}
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 768px) {
+	.sidebar {
+		width: 45%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.sidebar {
+		display: none;
+	}
 }

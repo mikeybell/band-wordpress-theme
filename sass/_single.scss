@@ -8,3 +8,25 @@
 // 	background: black;
 // 	padding: 10px;
 // }
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 1000px) {
+	
+	.main-single {
+		padding: 100px 20px;
+	}
+}
+
+
+@media all and (max-width: 768px) {
+	
+	.main-single h1 {
+		font-size: 5rem;
+	}
+}

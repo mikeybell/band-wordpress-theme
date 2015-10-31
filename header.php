@@ -20,8 +20,14 @@
 <body <?php body_class(); ?>>
 
 <header id="top">
+  <a href="#" class="burger">&#9776;</a>
+  
   <div class="nav">
     <div class="container">
+
+      <div class="close">
+        <i class="fa fa-times-circle"></i>
+      </div> <!-- /.close -->
       
       <div class="nav-right">
       <?php wp_nav_menu( array(
@@ -32,5 +38,7 @@
 
     </div> <!-- /.container -->
   </div> <!-- /.nav-->
+
+
 </header><!--/.header-->
 

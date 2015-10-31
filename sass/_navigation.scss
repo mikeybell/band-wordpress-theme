@@ -29,7 +29,6 @@ ul li {
 	justify-content: flex-end;
 }
 
-
 .nav {
 	background: rgba(0,0,0,0.2);
 	position: fixed;
@@ -38,3 +37,76 @@ ul li {
 	width: 100%;
 	padding: 25px;
 }
+
+.close {
+	display: none;
+}
+
+.burger {
+	display: none;
+}
+
+
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 515px) {
+	
+	.nav .container {
+		display: block;
+		text-align: center;
+	}
+
+	.nav-right ul li {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.nav {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		background: rgba(0,0,0,0.9);
+		z-index: 9999;
+		height: 100%;
+		padding: 80px 25px;
+	}	
+
+
+	ul.menu {
+		li {
+			a {
+				border-bottom: 1px solid #4C8BA8;
+			}
+		}
+	}
+
+	.close {
+		display: block;
+		color: $blue;
+		font-size: 3rem;
+		position: absolute;
+		top: 30px;
+		right: 50px;
+		cursor: pointer;
+	}
+
+	.burger {
+		display: block;
+		color: $blue;
+		font-size: 4rem;
+		position: absolute;
+		top: 30px;
+		right: 50px;
+		cursor: pointer;
+	}
+
+}
+
+

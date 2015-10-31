@@ -18,6 +18,8 @@
 @import 'comments';
 @import 'footer';
 
+@import url('css/animate.css');
+
 $darkgrey: #222222;
 $blue: #4C8BA8;
 
@@ -261,7 +263,18 @@ Media Queries
 		}
 	}
 
+	.content {
+		width: 50%;
+	}
+
 }
+
+@media all and (max-width: 600px) {
+	.content {
+			width: 100%;
+		}
+}
+
 
 @media all and (max-width: 550px) {
 	
@@ -284,3 +297,30 @@ Media Queries
 
 }
 
+@media all and (max-width: 468px) {
+	
+	.social-nav {
+		a {
+			margin: 0;
+		}
+	}
+}
+
+@media all and (max-width: 400px) {
+	
+	ul.menu li a {
+		padding: 20px;
+	}
+}
+
+@media all and (max-width: 320px) {
+	.shows h2 {
+		font-size: 4rem;
+	}
+
+	.social-nav ul li a {
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+	}
+}

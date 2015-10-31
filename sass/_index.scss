@@ -25,3 +25,18 @@
 article .read-more {
 	margin-bottom: 50px;
 }
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 1000px) {
+	
+	.main-index {
+		padding: 100px 20px;
+	}
+}
+

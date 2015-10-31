@@ -3,3 +3,33 @@
 	padding: 100px 100px;
 	background: $darkgrey;
 }
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 1000px) {
+	
+	.main-listen {
+		padding: 100px 20px;
+	}
+}
+
+
+@media all and (max-width: 768px) {
+	
+	.main-listen h1 {
+		font-size: 5rem;
+	}
+}
+
+@media all and (max-width: 468px) {
+	
+	.main-listen h1 {
+		font-size: 3.8rem;
+	}
+
+}

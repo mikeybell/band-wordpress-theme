@@ -12,9 +12,9 @@ get_header();  ?>
 	<!-- Hero -->
 	<div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('<?php echo $background[0]; ?>') fixed center">
 		<div class="name">
-			<h1><?php bloginfo('name'); ?></h1>
-			<h3><?php bloginfo('description') ?></h3>
-			<div class="dn-arrow">
+			<h1 class="wow fadeIn"><?php bloginfo('name'); ?></h1>
+			<h3 class="wow fadeIn"><?php bloginfo('description') ?></h3>
+			<div class="dn-arrow wow bounce">
 				<i class="fa fa-chevron-circle-down"></i>
 			</div>
 		</div> <!-- /.name -->
@@ -27,7 +27,7 @@ get_header();  ?>
 	    <?php // Start the loop ?>
 	    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-			<div class="bio-text">
+			<div class="bio-text wow fadeInUp">
 	      	<?php the_content(); ?>
 	      </div>
 
@@ -38,7 +38,7 @@ get_header();  ?>
 	<!-- News -->
 	<section class="news">
 		<div class="container">
-			<h2>Latest News</h2>
+			<h2 class="wow fadeInUp">Latest News</h2>
 			
 			<?php 
 			// the query
@@ -53,7 +53,7 @@ get_header();  ?>
 				<!-- the loop -->
 				<div class="home-posts">
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-						<div class="post">
+						<div class="post wow fadeInUp">
 							<div class="line"></div>
 							<?php the_post_thumbnail('large'); ?>
 							<h4><?php the_title(); ?></h4>
@@ -69,7 +69,7 @@ get_header();  ?>
 				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
 
-			<a href="<?php bloginfo('url'); ?>/news"><h3>See all news</h3></a>
+			<a href="<?php bloginfo('url'); ?>/news"><h3 class="wow fadeInUp">See all news</h3></a>
 			
 		</div> <!-- /.container -->
 	</section> <!-- /.news -->
@@ -77,9 +77,9 @@ get_header();  ?>
 	<!-- Shows -->
 	<a href="<?php bloginfo('url'); ?>/shows">
 		<?php $image = get_field('show_image'); ?>
-		<section class="shows" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('<?= $image['url']; ?>') fixed center">
+		<section class="shows wow fadeInUp" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('<?= $image['url']; ?>') fixed center">
 			<div class="container">
-				<h2><?php the_field('shows'); ?></h2>
+				<h2 class="wow fadeInLeft"><?php the_field('shows'); ?></h2>
 			</div> <!-- .container -->
 		</section> <!-- /.shows -->
 	</a>
@@ -88,7 +88,7 @@ get_header();  ?>
 	<!-- Social -->
 	<section class="social">
 		<div class="container">
-			<h2>Listen & Connect</h2>
+			<h2 class="wow fadeInUp">Listen & Connect</h2>
 
 			<div class="social-nav">
 			<?php wp_nav_menu( array(
