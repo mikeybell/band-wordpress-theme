@@ -2,6 +2,7 @@ var gulp   = require('gulp'),
 		sass = require('gulp-sass'),
 		autoprefixer = require('gulp-autoprefixer'),
 		concat = require('gulp-concat'),
+		autoprefixer = require('gulp-autoprefixer'),
 		browserSync = require('browser-sync'),
 		reload = browserSync.reload;
 
@@ -19,6 +20,7 @@ gulp.task('styles', function() {
 			'sourcemap=none': true,
 			errLogToConsole: true
 		}))
+		.pipe(autoprefixer('last 2 versions', 'ie8'))
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('.'))
 		.pipe(reload({ stream: true }));
