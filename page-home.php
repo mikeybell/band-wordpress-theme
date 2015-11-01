@@ -10,7 +10,7 @@ get_header();  ?>
 <div class="main">
 
 	<!-- Hero -->
-	<div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('<?php echo $background[0]; ?>') fixed center">
+	<div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('<?php echo $background[0]; ?>') fixed; background-repeat: no-repeat;">
 		<div class="name">
 			<h1 class="wow fadeIn"><?php bloginfo('name'); ?></h1>
 			<h3 class="wow fadeIn"><?php bloginfo('description') ?></h3>
