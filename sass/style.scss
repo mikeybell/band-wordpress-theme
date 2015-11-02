@@ -315,14 +315,19 @@ Media Queries
 	}
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 399px) {
 	.shows h2 {
 		font-size: 4rem;
 	}
 
-	.social-nav ul li a {
-		display: block;
-		width: 50%;
-		margin: 0 auto;
+	.social-nav ul.menu li a {
+		padding: 10px;
+		border-bottom: none;
 	}
+
+	// .social-nav ul li a {
+	// 	display: block;
+	// 	width: 50%;
+	// 	margin: 0 auto;
+	// }
 }
